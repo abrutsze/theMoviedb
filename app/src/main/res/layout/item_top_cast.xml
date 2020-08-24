@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginStart="@dimen/dp_6"
+    android:layout_marginEnd="@dimen/dp_6">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/vMoveItemPhotoContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/dp_6"
+        app:cardElevation="@dimen/dp_6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/vMoveItemPhoto"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_138"
+            android:adjustViewBounds="true"
+            android:scaleType="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/vMoveItemName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/sp_12"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/vMoveItemPhotoContainer"
+        app:layout_constraintStart_toStartOf="@+id/vMoveItemPhotoContainer"
+        app:layout_constraintTop_toBottomOf="@+id/vMoveItemPhotoContainer"
+        tools:text="Jamie Foxx" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/vMoveItemCharacter"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_2"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/sp_12"
+        app:layout_constraintEnd_toEndOf="@+id/vMoveItemName"
+        app:layout_constraintStart_toStartOf="@+id/vMoveItemName"
+        app:layout_constraintTop_toBottomOf="@+id/vMoveItemName"
+        tools:text="Frank" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

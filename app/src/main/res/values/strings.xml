@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SimpleMovieApp</string>
+    <string name="null_data_server">Error data server</string>
+    <string name="user_score">User Score</string>
+    <string name="over_view">Overview</string>
+    <string name="top_cast">Top Billed Cast</string>
+    <string name="release">"Released: "</string>
+</resources>

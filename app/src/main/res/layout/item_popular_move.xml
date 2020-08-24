@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginStart="@dimen/dp_9"
+    android:layout_marginTop="@dimen/dp_12"
+    android:layout_marginEnd="@dimen/dp_9"
+    android:layout_marginBottom="@dimen/dp_12">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/vPopularItemPhoto"
+        android:layout_width="@dimen/dp_160"
+        android:layout_height="@dimen/dp_240"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/vPopularItemName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_25"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/sp_18"
+        app:layout_constraintEnd_toEndOf="@+id/vPopularItemPhoto"
+        app:layout_constraintStart_toStartOf="@+id/vPopularItemPhoto"
+        app:layout_constraintTop_toBottomOf="@+id/vPopularItemPhoto"
+        tools:text="Star Wars: The Rise of Skywalker" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/lRateMoveContainer"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginStart="@dimen/dp_12"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:background="@drawable/border_rate_move_container"
+        app:layout_constraintBottom_toTopOf="@+id/vPopularItemName"
+        app:layout_constraintStart_toStartOf="@+id/vPopularItemName">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/vRateCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorRateCount"
+            android:textSize="@dimen/sp_18"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="94" />
+
+        <ProgressBar
+            android:id="@+id/pgRateCount"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:max="100"
+            android:progress="60"
+            android:progressDrawable="@drawable/border_rate_bar_progress"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/vPopularItemDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorMoveDate"
+        android:textSize="@dimen/sp_14"
+        app:layout_constraintStart_toStartOf="@+id/vPopularItemName"
+        app:layout_constraintTop_toBottomOf="@+id/vPopularItemName"
+        tools:text="18 Dec 2019" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
